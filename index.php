@@ -10,23 +10,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="/src/js/index.js"></script>
 </head>
 <body>
     <!------------------------------------------------Header CODE------------------------------------------------------->
     <?php
-        include("header.html");
+        include("/src/page/header.html");
     ?>
     <!------------------------------------------------ABOUT CODE------------------------------------------------------->
     <?php
-        include("about.html");
+        include("/src/page/about.html");
     ?>
     <!------------------------------------------------SERVICES CODE-------------------------------------------------->
     <?php
-        include("services.html");
+        include("/src/page/services.html");
     ?>
         <!--------------------------------------------Portfolio------------------------------------->
     <?php
-        include("portfolio.html");
+        include("/src/page/portfolio.html");
     ?>
     <!--------------------------------------------Contact------------------------------------->
 <div id="contact">
@@ -35,20 +36,20 @@
             <div class="contactLeft">
                 <h1 class="subTitle">Contact Me</h1>
                 <p><!--font papersend-->skywalk.jilena@gmail.com</p>
-                <p><!--font phone-->+237674888692</p>
+                <p><!--font phone-->+32470440229</p>
                 <div class="socialIcons">
                     <a href=""><!--font facebook--></a>
                     <a href=""><!--font twitter--></a>
                     <a href=""><!--font instagram--></a>
                     <a href=""><!--font linkedin--></a>
                 </div>
-                <a href="images/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+                <a href="src/pdf/my-cv.pdf" download="" class="btn btn2">Download CV</a>
             </div>
             <div class="contactRight">
                 <form action="index.php" method="GET">
-                    <input type="text" name="name" placeholder="Your Name" >
-                    <input type="email" name="email" placeholder="Your Email" >
-                    <textarea name="message" rows="6" placeholder="Your Message" id=""></textarea>
+                    <input type="text" name="name" placeholder="your name" >
+                    <input type="email" name="email" placeholder="your email" >
+                    <textarea name="message" rows="6" placeholder="Reach out to me anytime 😊" id=""></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
@@ -83,9 +84,6 @@
         }
     }
 
-   
     ?>    
-<script src="index.js"></script>
-
 </body>
 </html>
