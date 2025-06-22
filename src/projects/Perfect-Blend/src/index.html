@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The perfect Blend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <script type="module" src="assets/js/script2.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>The perfect Blend</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html" id="viewcart"><span>0</span> items</a></li>
+        </ul>
+    </nav>
+
+</header>
+<main>
+
+        <h2>Our blends</h2>
+        <p>Crafted with care and expertise, our blends capture the essence of tradition and innovation. Explore our
+            curated
+            selection of teas, each steeped in flavor and history, to embark on a journey of taste and discovery.</p>
+
+
+        <div id="products">
+            <div class="wrapper"></div>
+                <template id="teas-template">
+                    <article data-name="English Breakfast">
+                        <header>
+                            <h3>English Breakfast</h3>
+                            <img src="./images/english-breakfast.webp" alt="English Breakfast" title="English Breakfast">
+                        </header>
+                        <p>A robust and full-bodied black tea blend.</p>
+                        <button>Add to cart</button>
+                        <footer>
+                            <p class="price">€4.99</p>
+                            <p class="category">black</p>
+                        </footer>
+                    </article>
+                </template>
+        </div>
+
+</main>
+
+</body>
+</html>

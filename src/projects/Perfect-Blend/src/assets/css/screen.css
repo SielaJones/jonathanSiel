@@ -1,0 +1,202 @@
+
+:root {
+
+
+
+    --bg-color: #fff0c0;
+    --bg-color-secondary: #fdd2c5;/*#f2e9e4*/
+    --bg-color-tertiary: #eaadd6;
+    --highlight-color: #c7b6e2;
+    --highlight-color-secondary: #94bfe9;
+    --text-color: #503c20;
+
+    --high-accent: #ff1493;
+
+    --main-font: "Lato", Verdana, Arial, sans-serif;
+    --title-font:  "Merriweather", serif;
+}
+
+body {
+
+    color: var(--text-color);
+    font-family: var(--main-font);
+    font-weight: 300;
+}
+
+h1 {
+    font-family: var( --title-font);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--bg-color-secondary);
+    text-align: center;
+    text-transform: lowercase;
+    text-shadow: var(--high-accent) 0.20rem 0.15rem 0;
+    padding: 2rem 0 0 0 ;
+}
+main h2 {
+    font-family: var( --title-font);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+main > p, form > p  {
+    width: 80%;
+    line-height: 140%;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+body > header {
+    background: linear-gradient(9deg, rgba(234,173,214,1) 62%, rgba(253,210,197,1) 100%);
+    margin-bottom: 2.5rem;
+    padding: 0 0.5rem
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+nav ul li {
+
+}
+nav ul li a {
+    border: 0.20rem solid var(--high-accent) ;
+    border-top-style: none;
+    border-left-style: none;
+    text-shadow: rgba(0,0,0,0.3) 0.10rem 0.10rem 0.02rem;
+    font-weight: 400;
+    background-color: var(--highlight-color-secondary);
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+/*************/
+/*    TEA    */
+/*************/
+#products .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#products .wrapper article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: var(--bg-color-secondary);
+    padding: 1rem;
+    /*
+    border: 0.25rem solid #ff1493;
+    border-image: linear-gradient(to right,#9932cc,#ff1493) 30;*/
+    border: 0.25rem solid var(--bg-color-tertiary);
+    border-image: linear-gradient(to right,#94bfe9, #eaadd6) 30;
+}
+
+#products .wrapper article h3,#products .wrapper article img, #products .wrapper article p {
+    margin-bottom: 1rem;
+}
+#products .wrapper article footer  {
+    display: flex;
+    justify-content: space-between;
+}
+/*************/
+/*   FORM    */
+/*************/
+
+ button, a {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--highlight-color);
+    color: white;
+    padding: 0.4rem;
+    font-family: var(--main-font);
+    margin: 0  0 1rem 0;
+}
+button:hover {
+    outline: none;
+    background-color: var(--highlight-color-secondary);
+}
+button:active {
+    background-color: var(--bg-color-tertiary);
+}
+header a:hover {
+    background-color: var(--highlight-color);
+}
+table button:hover {
+    background-color: var(--bg-color-secondary);
+    color: var(--high-accent);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+form > button {
+    margin: 1rem 0 0 2rem;
+    background-color:  var(--high-accent);
+    padding: 0.7rem;
+}
+
+/***********************************/
+/*           TABLE                 */
+/***********************************/
+
+table {
+    border-collapse: collapse;
+    margin-left: 2rem;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-color-secondary);
+}
+
+th {
+    padding: 0.5rem
+}
+thead th{
+    background-color: var(--highlight-color-secondary);
+    font-weight: 300;
+    color: white;
+}
+tfoot th {
+    font-weight: 800;
+}
+tfoot th:first-child {
+    text-align: right;
+}
+tfoot th:last-child {
+    text-align: left;
+}
+td {
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+td button {
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

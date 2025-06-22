@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The perfect Blend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <script type="module" src="assets/js/card.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>The perfect Blend</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html" id="viewcart"><span>0</span> items</a></li>
+        </ul>
+    </nav>
+
+</header>
+<main>
+
+        <h2>Your shopping cart</h2>
+        <p> Below is a delightful summary of the exquisite tea products you've selected. Savor the anticipation as you
+            prepare to indulge in the rich flavors and soothing aromas that await you:</p>
+
+        <form id="summary" method="post" action="thankyou.html">
+            <table>
+                <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td data-name="Sencha">Sencha</td>
+                    <td data-price="7.99">€ 7.99</td>
+                    <td data-amount="1">1</td>
+                    <td data-total="€ 7.99">€ 7.99</td>
+                    <td class="remove">
+                        <button data-name="Sencha" type="button">Remove</button>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="3">Total</th>
+                    <th colspan="2" id="carttotal">€ 0.00</th>
+                </tr>
+                </tfoot>
+            </table>
+            <template class="rowtemplate">
+                <tr>
+                    <td data-name="darjeeling tea">Darjeeling Tea</td>
+                    <td data-price="6.99">€ 6.99</td>
+                    <td data-amount="1">1</td>
+                    <td data-total="6.99">€ 6.99</td>
+                    <td class="remove">
+                        <button data-name="darjeeling tea" type="button">Remove</button>
+                    </td>
+                </tr>
+            </template>
+
+
+            <p>Take a moment to review your selections, ensuring every blend is just right. If you're ready to complete
+                your
+                order, proceed to checkout and let the tea magic begin!</p>
+
+            <button>Complete purchase</button>
+        </form>
+
+</main>
+
+</body>
+</html>

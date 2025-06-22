@@ -1,0 +1,12 @@
+:root {
+    --transition-length: 0.3s;
+    --transition-timing: ease-in;
+}
+/* details */
+
+input {
+    transition: background-color var(--transition-length) var(--transition-timing);
+}
+
+
+
