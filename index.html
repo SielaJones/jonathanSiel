@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skywalk Personal Portfolio Website </title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://kit.fontawesome.com/0fb23e0c31.js" crossorigin="anonymous"></script>
     <script src="src/js/index.js"></script>
 </head>
 <body>
@@ -19,9 +20,11 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     <!--font cross icon onclick="closemenu()"-->    
                 </ul>
                 <!--font menu icon onclick="openmenu()"-->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="headertext">
                 <p>CYBERSECURITY SPECIALIST</p>
@@ -77,6 +80,7 @@
             <h1 class="subTitle">My Services</h1>
             <div class="servicesList">
                 <div>
+                    <i class="fa-solid fa-computer"></i>
                     <!--font-->
                     <h2>Computer Technician</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -86,6 +90,7 @@
                 </div>
                 <div>
                     <!--font-->
+                    <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Sed, illum magni numquam, provident amet ut ducimus architecto,
@@ -94,6 +99,7 @@
                 </div>
                 <div>
                     <!--font-->
+                    <i class="fa-solid fa-sitemap"></i>
                     <h2>Information System Design</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Sed, illum magni numquam, provident amet ut ducimus architecto,
@@ -101,8 +107,18 @@
                     <a href="#">Learn more</a>
                 </div>
                 <div>
+                    <i class="fa-solid fa-database"></i>
                     <!--font-->
                     <h2>Database Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Sed, illum magni numquam, provident amet ut ducimus architecto,
+                     nam nemo esse eos accusamus. Vero, autem culpa!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!--font-->
+                    <i class="fa-brands fa-linux"></i>
+                    <h2>Linux Fundamentals</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Sed, illum magni numquam, provident amet ut ducimus architecto,
                      nam nemo esse eos accusamus. Vero, autem culpa!</p>
@@ -122,7 +138,7 @@
                     <div class="layer">
                         <h3>Perfect Blend</h3>
                         <p>Simple CRUD system with html, css and js (using localstorage)</p>
-                        <a href="src/projects/03-the-perfect-blend/src/index.html" target="_blank" rel="noopener noreferrer"><!--font external link--></a>
+                        <a href="src/projects/03-the-perfect-blend/src/index.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -130,7 +146,7 @@
                     <div class="layer">
                         <h3>Youtube Clone</h3>
                         <p>Just a sketch of youtube frontend to enhance css knowledge</p>
-                        <a href="src/projects/Youtube Clone/YoutubeClone.html" target="_blank" rel="noopener noreferrer"><!--font external link--></a>
+                        <a href="src/projects/Youtube Clone/YoutubeClone.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -138,7 +154,7 @@
                     <div class="layer">
                         <h3>Rock Paper Scissors</h3>
                         <p>an app to help relax yourself</p>
-                        <a href="src/page/10-rock-papaer-scissors.html" target="_blank" rel="noopener noreferrer">Relax</a>
+                        <a href="src/page/10-rock-papaer-scissors.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -146,7 +162,7 @@
                     <div class="layer">
                         <h3>Online Banking Management System</h3>
                         <p>The app help manage an entire Banking database system efficiently</p>
-                        <a href="#"><!--font external link--></a>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -160,13 +176,13 @@
             <div class="row">
                 <div class="contactLeft">
                     <h1 class="subTitle">Contact Me</h1>
-                    <p><!--font papersend-->siela.jones@gmail.com</p>
-                    <p><!--font phone-->+32470440229</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>siela.jones@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+32470440229</p>
                     <div class="socialIcons">
-                        <a href=""><!--font facebook--></a>
-                        <a href=""><!--font twitter--></a>
-                        <a href=""><!--font instagram--></a>
-                        <a href=""><!--font linkedin--></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="src/pdf/my-cv.pdf" download="" class="btn btn2">Download CV</a>
                 </div>
@@ -181,7 +197,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright @ SkyHunter <!--font sky--></p>
+            <p>Copyright @ SkyHunter <i class="fa-brands fa-skyatlas"></i></p>
         </div>
     </div>
 </body>
